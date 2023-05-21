@@ -1,0 +1,245 @@
+body {
+  background-color: #1f0f2a;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: .5em
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d22d4a
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.bg-light {
+  background-color: #3a1b52 !important;
+}
+
+
+.bg-dark {
+  background-color: #1f0f2a !important;
+}
+
+.btn-primary {
+  margin-top: 20px;
+}
+
+.btn-primary{
+  cursor: pointer;
+  width: 140px;
+  padding: 0.5rem 1rem;
+  border-radius: 19px;
+  background-color: #ee1e58;
+  color: #ffd800;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+}
+
+.text-light{
+  color: #fe9600 !important;
+}
+
+.text-light:hover{
+  color: #ee1e58 !important;
+}
+
+.text-secondary {
+  color: #ee1e58 !important;
+}
+
+.btn-primary:hover {
+  background-color: #fe9600;
+  color: #fff;
+}
+
+.features {
+  padding: 50px 0;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+
+.navbar {
+  position: fixed;
+  transition: 1s;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.icon-bar {
+  background-color: #000;
+
+}
+
+.nav {
+  font-family: Lithos Pro;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.nav li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav li:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #38fd07;
+  transform: scaleX(0);
+  transition: .2s ease-in-out;
+}
+
+.nav li:hover:after {
+  transform: scaleX(1);
+}
+
+.card {
+  background-color: #5c246a;
+  border: 2px solid #880e4a;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+  border-radius: 10px;
+}
+
+textarea,
+input {
+  display: block;
+    width: 94%;
+    margin-bottom: 16px;
+    padding: 10px 8px;
+    border: none;
+    outline: 1px solid #f7c544 !important;
+    border-radius: 3px !important;
+    font-size: 12px !important;
+    font-weight: 400;
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
+
+#about{
+  background: linear-gradient(0deg, #000000, rgb(54 5 34 / 30%)), url(../images/background2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.about-container {
+  position: relative;
+  right: 0;
+  top: 6rem;
+}
+
+.card-about {
+  width: 28rem;
+}
+
+.para {
+  min-height: 500px;
+}
+
+.para h3 {
+  text-align: center;
+  margin-top: 15%;
+  color: #fff;
+  font-family: nyala;
+  font-size: 44px;
+}
+/* 
+.divider::before {
+  content: "";
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  bottom: -40.3%;
+  left: 0px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  background-size: auto;
+  background-repeat: repeat-x;
+  background-position: 20vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%233A1B52'/></svg>");
+} */
+
+.divider {
+  width: 100%;
+  background-color: #3a1b52;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media(max-width: 992px) {
+  body {
+    background-size: 100% 100%;
+  }
+  .para {
+    min-height: 800px;
+  }
+  
+  .logoImg,
+  .card-about,
+  #logoImg {
+    width: 100%;
+  }
+
+  .divider::before {
+    bottom: -66.3%;
+  }
+}

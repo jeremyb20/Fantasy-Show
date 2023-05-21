@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparsa Fantasy Show</title>
+  <meta name="description" content="Comparsa Fantasy Show donde te llevamos el entretenimiento de un show de comparsa de mucha calidad para todas tus fiestas y eventos.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+
+<body>
+
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top py-4">
+    <div class="container">
+      <a class="navbar-brand text-light" style="font-size: 20px;" href="#"><img src="./images/logo.png" width="100px" alt="" srcset=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#features">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="./videos/video-10.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <!-- <h1 class="display-3 text-light">¡Bienvenido a la Comparsa Fantasy Show!</h1> -->
+          <div>
+            <img id="logoImg" src="./images/logo.png" alt="" srcset="">
+          </div>
+          <p class="lead mb-0">Donde te llevamos el entretenimiento de un show de comparsa de mucha calidad para todas tus fiestas y eventos.</p>
+          <a class="btn btn-primary btn-lg" href="#contact" role="button">Contáctanos</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- partial -->
+
+
+  <section id="features" class="divider">
+    <div class="container text-center">
+      <img class="logoImg mt-5" src="./images/eventos.png" alt="" srcset="">
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container features text-center">
+
+      <div class="row p-5">
+        <div class="col-sm-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Música en vivo</h5>
+              <p class="card-text">Disfruta de nuestros talentosos músicos en cada actuación.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Grupos de baile</h5>
+              <p class="card-text">Contamos con diversos grupos de baile que te harán vibrar.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Eventos especiales</h5>
+              <p class="card-text">Participamos en eventos especiales y festivales durante todo el año.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- About Start -->
+
+  <section id="about" class="container-fluid py-5">
+    <div class="container about-container">
+      <div class="card mx-auto float-end card-about">
+        <div class="card-body">
+          <div class="container text-center">
+            <img class="logoImg mt-2" src="./images/Nosotros.png" alt="" srcset="">
+          </div>
+          <p>Comparsa Fantasy Show es una comparsa dedicada a llevar la magia en sus evento y desfiles a través de su talento artístico, 
+            sus impactantes trajes y su habilidad para contagiar el espíritu festivo.
+          </p>
+          <p>Más allá de su impecable rendimiento en el escenario, Fantasy Show también se dedica a la creación de un ambiente festivo interactivo. Sus integrantes se involucran con el público,
+             invitándolos a unirse a sus bailes y celebraciones, creando así una experiencia participativa y llena de alegría para todos los asistentes.
+          </p>
+          <p>Son maestros en la creación de momentos inolvidables y en hacer que la diversión sea contagiosa para todos aquellos que tienen la suerte de presenciar su espectáculo.</p>  
+        </div>
+      </div>
+    </div>
+   
+  </section>
+
+<!-- About End -->
+
+
+  <section id="contact" class="container text-center py-5">
+    <div class="container text-center">
+      <img class="logoImg mt-2" src="./images/Contactanos.png" alt="" srcset="">
+    </div>
+    <p>Para más información, contáctanos a través del siguiente formulario:</p>
+
+    <div class="card mx-auto" style="width: 18rem;">
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+      <!-- Social icons -->
+      <div class="pb-4 social">
+        <a href="https://www.facebook.com/LocalPetsFamily-115795170546124" target="_blank">
+          <i class="fab fa-facebook-f mr-3"></i>
+        </a>
+
+        <a href="https://m.me/115795170546124" target="_blank">
+          <i class="fab fa-facebook-messenger mr-3"></i>
+        </a>
+
+        <a href="https://wa.me/+50663050037?text=Estoy%20interesad@%20en%20sus%20productos%20necesito%20mas%20informacion" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+  <!-- Social icons -->
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <span>Copyright &copy; <span id="copyrightYear">2020</span> Comparsa. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('copyrightYear').innerHTML = new Date().getFullYear();</script>
+  <script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+        document.getElementById("navbar").style.background = "#3a1b52";
+        document.getElementById("navbar").className = 'navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3';
+        
+      } else {
+
+        document.getElementById("navbar").style.background = "none";
+        document.getElementById("navbar").className = 'navbar navbar-expand-lg fixed-top py-4';
+      }
+    }
+  </script>
+
+
+  <!-- ANALYTICS -->
+
+</body>
+</html>
