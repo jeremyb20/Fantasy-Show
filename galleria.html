@@ -8,6 +8,8 @@
   <meta name="description" content="Comparsa Fantasy Show donde te llevamos el entretenimiento de un show de comparsa de mucha calidad para todas tus fiestas y eventos.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512" crossorigin="anonymous" />
+
 </head>
 
 
@@ -26,6 +28,14 @@
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="#contact">Contacto</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="https://wa.me/+50685853322?text=Estoy%20interesad@%20en%20sus%servicios%20necesito%20más%20información" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="https://www.facebook.com/comparsafantasyshow" target="_blank"><i class="fab fa-facebook-f mr-3"></i> Facebook</a>
           </li>
         </ul>
       </div>
@@ -105,15 +115,34 @@
     </div>
   </section>
 
-  <section id="contact" class="container text-center py-5">
+  <section id="contact" class="container text-center py-5" style="height: 90vh;">
     <div class="container text-center">
       <img class="logoImg mt-2" src="./images/Contactanos.png" alt="" srcset="">
     </div>
-    <p>Para más información, contáctanos a través del siguiente formulario:</p>
 
-    <div class="card mx-auto" style="width: 18rem;">
+
+    <h5>Síguenos en nuestras redes sociales:</h5>
+    <div class="social-container">
+      <a class="social-link" href="https://www.facebook.com/comparsafantasyshow" target="_blank">
+        <img src="./images/facebook-icon.png" width="50px" alt="Facebook">
+      </a>
+      <a class="social-link" href="https://wa.me/+50685853322?text=Estoy%20interesad@%20en%20sus%servicios%20necesito%20más%20información" target="_blank">
+        <img src="./images/whatsapp-icon.png" alt="WhatsApp" width="100px">
+      </a>
+      <a class="social-link" href="https://www.tiktok.com/@comparsafantasyshow22?_t=8cfczOhbLOP&_r=1" target="_blank">
+        <img src="./images/tiktok-icon.png" alt="TikTok" width="100px">
+      </a>
+      <a class="social-link" href="https://www.youtube.com/@criscris10cr" target="_blank">
+        <img src="./images/youtube-icon.png" alt="YouTube" width="100px">
+      </a>
+    </div>
+
+
+
+    <div class="card mx-auto mx-5" style="width: 18rem;">
+      <p>Para más información, contáctanos a través del siguiente formulario:</p>
       <div class="card-body">
-        <form>
+        <form id="contactForm">
           <div class="form-group">
             <label for="name">Nombre</label>
             <input type="text" class="form-control" id="name" required>
@@ -132,28 +161,9 @@
     </div>
   </section>
 
-
-  <section>
-      <!-- Social icons -->
-      <div class="pb-4 social">
-        <a href="https://www.facebook.com/LocalPetsFamily-115795170546124" target="_blank">
-          <i class="fab fa-facebook-f mr-3"></i>
-        </a>
-
-        <a href="https://m.me/115795170546124" target="_blank">
-          <i class="fab fa-facebook-messenger mr-3"></i>
-        </a>
-
-        <a href="https://wa.me/+50663050037?text=Estoy%20interesad@%20en%20sus%20productos%20necesito%20mas%20informacion" target="_blank">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </div>
-  <!-- Social icons -->
-  </section>
-
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="bg-dark text-white text-center py-3 mt-5">
     <div class="container">
-      <span>Copyright &copy; <span id="copyrightYear">2020</span> Comparsa. Todos los derechos reservados.</span>
+      <span>Copyright &copy; <span id="copyrightYear">2020</span> Comparsa Fantasy Show. Todos los derechos reservados.</span>
     </div>
   </footer>
 
@@ -176,6 +186,23 @@
       }
     }
   </script>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita que se envíe el formulario de forma predeterminada
+
+  // Obtén los valores de los campos de entrada
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  // Crea el contenido del correo electrónico
+  var body = "Nombre: " + name + "\nCorreo Electrónico: " + email + "\nMensaje: " + message;
+
+  // Abre el cliente de correo electrónico predeterminado del usuario
+  window.location.href = "mailto:comparsafantasyshowcr@outlook.es.com?subject=Solicitud de Información Comparsa Fantasy Show&body=" + encodeURIComponent(body);
+});
+</script>
 
 
   <!-- ANALYTICS -->
