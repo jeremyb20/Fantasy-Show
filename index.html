@@ -134,7 +134,7 @@
 
     <div class="card mx-auto" style="width: 18rem;">
       <div class="card-body">
-        <form>
+        <form id="contactForm">
           <div class="form-group">
             <label for="name">Nombre</label>
             <input type="text" class="form-control" id="name" required>
@@ -196,6 +196,22 @@
         document.getElementById("navbar").className = 'navbar navbar-expand-lg fixed-top py-4';
       }
     }
+  </script>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que se envíe el formulario de forma predeterminada
+
+    // Obtén los valores de los campos de entrada
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    // Crea el contenido del correo electrónico
+    var body = "Nombre: " + name + "\nCorreo Electrónico: " + email + "\nMensaje: " + message;
+
+    // Abre el cliente de correo electrónico predeterminado del usuario
+    window.location.href = "mailto:jerebac@hotmail.com.com?subject=Formulario de Contacto&body=" + encodeURIComponent(body);
+  });
   </script>
 
 
