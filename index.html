@@ -135,14 +135,14 @@
 <!-- About End -->
 
 
-  <section id="contact" class="container text-center py-5" style="height: 90vh;">
+  <section id="contact" class="container text-center py-5" style="height: 70vh;">
     <div class="container text-center">
       <img class="logoImg mt-2" src="./images/Contactanos.png" alt="" srcset="">
     </div>
 
 
-    <h5>Síguenos en nuestras redes sociales:</h5>
-    <div class="social-container">
+    <h5 class="my-5">Síguenos en nuestras redes sociales:</h5>
+    <div class="social-container my-5">
       <a class="social-link" href="https://m.facebook.com/comparsafantasyshow" target="_blank">
         <img src="./images/facebook-icon.png" width="50px" alt="Facebook">
       </a>
@@ -159,7 +159,7 @@
 
 
 
-    <div class="card mx-auto mx-5" style="width: 18rem;">
+    <!-- <div class="card mx-auto mx-5" style="width: 18rem;">
       <p>Para más información, contáctanos a través del siguiente formulario:</p>
       <div class="card-body">
         <form id="contactForm">
@@ -178,8 +178,8 @@
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
       </div>
-    </div>
-  </section>
+    </div>-->
+  </section> 
 
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <div class="container">
@@ -207,20 +207,20 @@
     }
   </script>
   <script>
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita que se envíe el formulario de forma predeterminada
+  //   document.getElementById("contactForm").addEventListener("submit", function(event) {
+  //   event.preventDefault(); // Evita que se envíe el formulario de forma predeterminada
 
-    // Obtén los valores de los campos de entrada
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
+  //   // Obtén los valores de los campos de entrada
+  //   var name = document.getElementById("name").value;
+  //   var email = document.getElementById("email").value;
+  //   var message = document.getElementById("message").value;
 
-    // Crea el contenido del correo electrónico
-    var body = "Nombre: " + name + "\nCorreo Electrónico: " + email + "\nMensaje: " + message;
+  //   // Crea el contenido del correo electrónico
+  //   var body = "Nombre: " + name + "\nCorreo Electrónico: " + email + "\nMensaje: " + message;
 
-    // Abre el cliente de correo electrónico predeterminado del usuario
-    window.location.href = "mailto:comparsafantasyshowcr@outlook.es?subject=Solicitud de Información Comparsa Fantasy Show&body=" + encodeURIComponent(body);
-  });
+  //   // Abre el cliente de correo electrónico predeterminado del usuario
+  //   window.location.href = "mailto:comparsafantasyshowcr@outlook.es?subject=Solicitud de Información Comparsa Fantasy Show&body=" + encodeURIComponent(body);
+  // });
   </script>
 
 
