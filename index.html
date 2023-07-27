@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comparsa Fantasy Show</title>
-  <meta name="description" content="Comparsa Fantasy Show donde te llevamos el entretenimiento de un show de comparsa de mucha calidad para todas tus fiestas y eventos.">
+  <meta name="Comparsas Costa Rica" content="Comparsa Fantasy Show donde te llevamos el entretenimiento de un show de comparsa de mucha calidad para todas tus fiestas y eventos.">
+  <meta name="keywords" content="Comparsas Costa Rica , Comparsa Fantasy Show" />
+  <meta name="author" content="Comparsa Fantasy Show" />
+  <meta name="copyright" content="Fantasy Show" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512" crossorigin="anonymous" />
 </head>
@@ -49,20 +53,24 @@
 
   <header class="header">
     <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="./videos/video-home.mp4" type="video/mp4">
+    <video class="video-mobile" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="./videos/video-14.mp4" type="video/mp4">
     </video>
-    <div class="container h-100">
-      <!-- <div class="d-flex h-100 text-center align-items-center">
+
+    <video class="video-desktop" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="./videos/video-10.mp4" type="video/mp4">
+    </video>
+    <div class="video-desktop container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-white">
           <div>
             <img id="logoImg" src="./images/logo.png" alt="" srcset="">
           </div>
           <p class="lead mb-0">Donde te llevamos el entretenimiento de un show de comparsa de mucha calidad para todas tus fiestas y eventos.</p>
-          <a class="btn btn-primary btn-lg" href="#contact" role="button">Contáctanos</a>
+          <a class="btn btn-primary btn-lg" role="button" href="https://wa.me/+50685853322?text=Estoy%20interesad@%20en%20sus%20servicios%20necesito%20más%20información" target="_blank"><i class="fab fa-whatsapp me-2"></i>Contáctanos</a>
         </div>
       </div>
-    </div> -->
+    </div>
   </header>
   <!-- partial -->
 
@@ -113,10 +121,13 @@
 
   <section id="about" class="container-fluid py-5">
     <div class="container about-container">
+    <video class="video-desktop" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="./videos/video-14.mp4" type="video/mp4">
+    </video>
       <div class="card mx-auto float-end card-about">
         <div class="card-body">
           <div class="container text-center">
-            <img class="logoImg mt-2" src="./images/Nosotros.png" alt="Nosotros">
+            <img class="logoImg mt-2" src="./images/Nosotros.png" alt="Nosotros Comparsas Costa Rica">
           </div>
           <p>Comparsa Fantasy Show es una comparsa dedicada a llevar la magia en sus evento y desfiles a través de su talento artístico, 
             sus impactantes trajes y su habilidad para contagiar el espíritu festivo.
@@ -136,7 +147,7 @@
 
   <section id="contact" class="container text-center py-5" style="height: 70vh;">
     <div class="container text-center">
-      <img class="logoImg mt-2" src="./images/Contactanos.png" alt="" srcset="">
+      <img class="logoImg mt-2" src="./images/Contactanos.png" alt="Comparsas CostaRica" srcset="./images/Contactanos.png">
     </div>
 
 
@@ -145,25 +156,25 @@
       <div class="row g-5 d-flex align-items-center">
         <div class="col-6 col-md-3">
           <a class="social-link" href="https://m.facebook.com/comparsafantasyshow" target="_blank">
-            <img src="./images/facebook-icon.png" width="50px" alt="Facebook">
+            <img srcset="./images/facebook-icon.png" src="./images/facebook-icon.png" width="50px" height="50px" alt="Facebook Comparsas CostaRica">
             <span class="nav-link text-light"> Facebook</span>
           </a>
         </div>
         <div class="col-6 col-md-3">
           <a class="social-link" href="https://wa.me/+50685853322?text=Estoy%20interesad@%20en%20sus%20servicios%20necesito%20más%20información" target="_blank">
-            <img src="./images/whatsapp-icon.png" alt="WhatsApp" width="100px">
+            <img srcset="./images/whatsapp-icon.png" src="./images/whatsapp-icon.png" alt="WhatsApp Comparsas CostaRica" width="100px" height="55px">
             <span class="nav-link text-light"> WhatsApp</span>
           </a>
         </div>
         <div class="col-6 col-md-3">
           <a class="social-link" href="https://www.tiktok.com/@comparsafantasyshow22?_t=8cfczOhbLOP&_r=1" target="_blank">
-            <img src="./images/tiktok-icon.png" alt="TikTok" width="60px">
+            <img srcset="./images/tiktok-icon.png" src="./images/tiktok-icon.png" alt="TikTok Comparsas CostaRica" width="60px">
             <span class="nav-link text-light"> TikTok</span>
           </a>
         </div>
         <div class="col-6 col-md-3">
           <a class="social-link" href="https://www.youtube.com/@criscris10cr" target="_blank">
-            <img src="./images/youtube-icon.png" alt="YouTube" width="100px">
+            <img srcset="./images/youtube-icon.png" src="./images/youtube-icon.png" alt="YouTube Comparsas CostaRica" width="100px">
             <span class="nav-link text-light"> YouTube</span>
           </a>
         </div>
